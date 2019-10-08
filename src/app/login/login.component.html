@@ -10,14 +10,14 @@
     <form #loginForm="ngForm" (ngSubmit)="login(loginForm.value)">
       <div class="row">
           <div class="input-field col s4 offset-s4">
-            <input id="username" type="text" class="validate white-text" required name="usuario" ngModel>
+            <input id="username" type="text" class="validate" required name="usuario" ngModel>
             <label for="username">Usuario</label>
           </div>
       </div>
 
       <div class="row">
           <div class="input-field col s4 offset-s4">
-            <input id="password" type="password" class="validate white-text" required name="psw" ngModel>
+            <input id="password" type="password" class="validate" required name="psw" ngModel>
             <label for="password">Password</label>
           </div>
       </div>
