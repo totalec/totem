@@ -1,0 +1,37 @@
+
+<div class="contenedor_principal" style="padding: 0% !important;margin: 0% !important;">
+  <div class="container">
+    <div class="row">
+      <div class="col s4 offset-s4">
+        <h1>LOGIN</h1>
+      </div>
+    </div>
+
+    <form #loginForm="ngForm" (ngSubmit)="login(loginForm.value)">
+      <div class="row">
+          <div class="input-field col s4 offset-s4">
+            <input id="username" type="text" class="validate white-text" required name="usuario" ngModel>
+            <label for="username">Usuario</label>
+          </div>
+      </div>
+
+      <div class="row">
+          <div class="input-field col s4 offset-s4">
+            <input id="password" type="password" class="validate white-text" required name="psw" ngModel>
+            <label for="password">Password</label>
+          </div>
+      </div>
+
+      <div class="row">
+          <div class="input-field col s4 offset-s4">
+            <button class="btn waves-effect waves-light" type="submit" [disabled]="!loginForm.form.valid">Ingresar
+                <i class="material-icons right">send</i>
+            </button>
+          </div>
+      </div>
+    </form>
+
+  </div>
+</div>
+
+
